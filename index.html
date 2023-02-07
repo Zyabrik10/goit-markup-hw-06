@@ -18,9 +18,56 @@
 <body>
 
     <!-- modal window -->
-    <div class="modal-wrapper is-hidden" data-modal>
+    <div class="modal-wrapper" data-modal>
         <div class="modal-window">
             <button class="close-button" data-modal-close>&times;</button>
+            <p class="intro-text">
+                Leave your contacts and we will call you back
+            </p>
+            <form class="contacts-form" name="contacts_form" autocomplete="on">
+                <div class="form-box">
+                    <label class="form-label" for="name_input">Name</label>
+                    <div class="input-box">
+                        <input class="form-input input-margin-top" type="text" id="name_input" name="name_input">
+                        <svg class="input-icon" width="18" height="24" viewBox="0 0 18 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/modal_window/icons/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-box form-input-space">
+                    <label class="form-label" for="phone_input">Phone</label>
+                    <div class="input-box">
+                        <input class="form-input input-margin-top" type="text" id="phone_input" name="phone_input">
+                        <svg class="input-icon" width="18" height="24" viewBox="0 0 18 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/modal_window/icons/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-box form-input-space">
+                    <label class="form-label" for="email_input">Email</label>
+                    <div class="input-box">
+                        <input class="form-input input-margin-top" type="text" id="email_input" name="email_input">
+                        <svg class="input-icon" width="18" height="24" viewBox="0 0 18 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/modal_window/icons/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-box textarea-box form-input-space">
+                    <label class="form-label" for="comment_input">Comment</label>
+                    <textarea class="form-input form-textarea input-margin-top" id="comment_input" name="comment_input"
+                        placeholder="Text input" resiz></textarea>
+                </div>
+                <div class="form-box checkbox-box">
+                    <input type="checkbox" name="checkbox_input" id="checkbox_input">
+                    <label class="form-label" for="checkbox_input">
+                        I accept the terms and conditions of the <a class="price-policy-link" href="">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="form-button button" type="submit">Send</button>
+            </form>
         </div>
     </div>
 

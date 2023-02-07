@@ -144,7 +144,7 @@ body {
   transform: translate(-50%, -50%);
 
   width: 408px;
-  height: 576px;
+  /* height: 576px; */
 
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -189,6 +189,145 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+
+.contacts-form {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+
+  color: var(--light-slate);
+}
+
+.form-box {
+  margin-top: 8px;
+}
+
+.intro-text {
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--dark);
+
+  margin-top: 24px;
+}
+
+.input-margin-top {
+  margin-top: 4px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+.form-label {
+  line-height: 1;
+}
+
+.form-input {
+  display: block;
+
+  color: #000;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding: 11px 40px;
+}
+
+.form-input-space {
+  margin-top: 8px;
+}
+
+.form-textarea {
+  display: block;
+  padding: 8px 16px;
+
+  height: 120px;
+
+  resize: none;
+}
+
+.form-textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 12px;
+  line-height: 1.33;
+
+  letter-spacing: 0.04em;
+}
+
+.form-input:focus,
+.checkbox-input:focus {
+  outline: 1px solid var(--primary-brand);
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+
+  transform: translateY(-50%);
+}
+
+.checkbox-box {
+  margin-top: 16px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  line-height: 1;
+}
+
+.price-policy-link {
+  color: var(--primary-brand);
+}
+
+.checkbox-input {
+  width: 16px;
+  height: 16px;
+}
+
+.form-button {
+  display: block;
+
+  margin: 24px auto 0;
+
+  background: #4d5ae5;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: #fff;
+
+  width: 169px;
+  height: 56px;
+
+  transition-property: background-color;
+  transition-duration: var(--general-duration);
+  transition-timing-function: var(--general-timimng-function);
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: var(--ocean);
+}
+
 /* </MODAL> */
 
 /* <HEADER> */
