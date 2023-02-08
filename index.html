@@ -18,7 +18,7 @@
 <body>
 
     <!-- modal window -->
-    <div class="modal-wrapper" data-modal>
+    <div class="modal-wrapper is-hidden" data-modal>
         <div class="modal-window">
             <button class="close-button" data-modal-close>&times;</button>
             <p class="intro-text">
@@ -61,8 +61,14 @@
                         placeholder="Text input" resiz></textarea>
                 </div>
                 <div class="form-box checkbox-box">
-                    <input type="checkbox" name="checkbox_input" id="checkbox_input">
-                    <label class="form-label" for="checkbox_input">
+                    <input class="hidden checkbox-input" type="checkbox" id="checkbox_input" name="checkbox_input">
+                    <label class="form-label form-check-label" for="checkbox_input">
+                        <span class="modal-form-checkbox">
+                            <svg class="tip-icon" width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/modal_window/tip_icon/symbol-defs.svg#icon-tip"></use>
+                            </svg>
+                        </span>
                         I accept the terms and conditions of the <a class="price-policy-link" href="">Privacy Policy</a>
                     </label>
                 </div>
@@ -432,7 +438,7 @@
 
     <!-- <FOOTER> -->
     <footer class="footer">
-        <div class="container flex-container">
+        <div class="container footer-content">
             <div class="logo-inspire flex-container-item">
                 <a class="footer-website-logo website-logo link" href="./index.html">
                     <span class="logo-web">web</span>studio
@@ -442,8 +448,8 @@
                     solutions.
                 </p>
             </div>
-            <div class="footer-media flex-container-item">
-                <p class="footer-madia-title">Social media</p>
+            <div class="footer-media">
+                <p class="footer-media-title footer-title">Social media</p>
                 <ul class="footer-media-list list flex-container">
                     <li class="footer-media-item flex-container-item">
                         <a class="footer-media-link link" href="">
@@ -478,6 +484,18 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-sub">
+                <p class="footer-sub-title footer-title">Subscribe</p>
+                <form class="footer-form" name="subscribe-form" autocomplete="on">
+                    <input class="footer-mail-input" type="mail" placeholder="E-mail" name="email_input">
+                    <button class="footer-form-submit button" type="submit">
+                        Subscribe
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/footer/telegram-icon/symbol-defs.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
